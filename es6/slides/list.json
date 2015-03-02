@@ -9,7 +9,7 @@
         "es6Intro/es6Featuresp2.html"
     ],
 
-    "features/arrows.html", [
+    "features/arrows/arrows.html", [
         "features/classes/classes.html",
         "features/classes/inheritance.html",
         "features/classes/transpiled.html"
@@ -18,11 +18,21 @@
         "features/destructuring/array.html",
         "features/destructuring/object.html"
     ],
-    "features/generators.html",
-    "features/letconst.html",
-    "features/modules.html",
-    "features/objLiterals.html",
-    "features/params.html",
-    "features/proxies.html",
-    "features/symbols.html"
+    "features/iterators/iterators.html",
+    "features/generators/generators.html",
+    "features/comprehensions/comprehensions.html",
+    [
+        "features/letandconst/let.html",
+        "features/letandconst/const.html"
+    ],
+    "features/modules/modules.html",
+    "features/literals/objLiterals.html",
+    [
+        "features/params/params.html",
+        "features/params/rest.html",
+        "features/params/restp2.html",
+        "features/params/spread.html"
+    ],
+    "features/proxies/proxies.html",
+    "features/symbols/symbols.html"
 ]
