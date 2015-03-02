@@ -1,0 +1,28 @@
+<h1>Clasees</h1>
+<small>whether you want this or not</small>
+
+<pre><code style="word-wrap: break-word;">
+class TodoModel {
+    constructor(storage) {
+        this.storage = storage;
+    }
+
+    create(title) {
+        title = title || '';
+
+        var newItem = {
+            title: title.trim(),
+            completed: false
+        };
+
+        return this.save(newItem);
+    },
+
+    save(item) {
+        return this.storage.save(newItem);
+    }
+}
+
+export default TodoModel;
+
+</code></pre>

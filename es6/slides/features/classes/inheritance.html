@@ -1,0 +1,29 @@
+<pre><code style="word-wrap: break-word;">
+class EnhancedTodoModel extends TodoModel {
+    constructor(storage) {
+        this.storage = storage;
+    }
+
+    create(title, owner) {
+
+        title = title || '';
+        owner = owner || '';
+
+        var newItem = {
+            title: title.trim(),
+            owner: owner.trim(),
+            completed: false
+        };
+
+        return this.save(newItem);
+    }
+
+    save(item) {
+        alert('Saving a new task');
+        super.save(item);
+    }
+}
+
+export default TodoModel;
+
+</code></pre>

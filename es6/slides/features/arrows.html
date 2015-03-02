@@ -1,0 +1,25 @@
+<h1>Arrows =></h1>
+
+<span>Similar to arrows in C# and share scope</span>
+<small><strike>self = this;</strike></small>
+
+<pre><code style="word-wrap: break-word;">
+var evens = numbers.map(num => num % 2 === 0);
+
+//or as a statement body
+var specialNums = numbers.map(num => {
+	return doSomething(num);
+});
+
+
+// Lexical this
+var bob = {
+  _name: "Bob",
+  _friends: [],
+  printFriends() {
+    this._friends.forEach(f =>
+      console.log(`${this._name} knows ${f}`));
+  }
+}
+
+</code></pre>

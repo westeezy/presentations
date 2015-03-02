@@ -1,0 +1,32 @@
+<h1>Destruturing Array</h1>
+
+<pre><code>
+var [month, date, year] = [3, 14, 1977];
+
+//swapping
+x = 3; 
+y = 4; 
+[x, y] = [y, x];
+
+var doWork = function() {
+    return [1, 3, 2];
+};
+ 
+let [, x, y, z] = doWork();
+
+</code></pre>
+
+<pre><code>
+var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; for (var _iterator = arr[Symbol.iterator](), _step; !(_step = _iterator.next()).done;) { _arr.push(_step.value); if (i && _arr.length === i) break; } return _arr; } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } };
+
+var doWork = function doWork() {
+  return [1, 3];
+};
+
+var _doWork = doWork();
+
+var _doWork2 = _slicedToArray(_doWork, 4);
+
+var x = _doWork2[1];
+var y = _doWork2[2];
+</code></pre>

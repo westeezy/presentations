@@ -1,0 +1,28 @@
+[
+    "index.html", [
+        "history/start.html",
+        "history/es5.0.html",
+        "history/es5.0p2.html"
+    ],
+    [
+        "es6Intro/es6Features.html",
+        "es6Intro/es6Featuresp2.html"
+    ],
+
+    "features/arrows.html", [
+        "features/classes/classes.html",
+        "features/classes/inheritance.html",
+        "features/classes/transpiled.html"
+    ],
+    [
+        "features/destructuring/array.html",
+        "features/destructuring/object.html"
+    ],
+    "features/generators.html",
+    "features/letconst.html",
+    "features/modules.html",
+    "features/objLiterals.html",
+    "features/params.html",
+    "features/proxies.html",
+    "features/symbols.html"
+]
