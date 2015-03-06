@@ -4,6 +4,7 @@
 	<li>rest parameters are only the ones that haven't been given a separate name, while the arguments object contains all arguments passed to the function;</li>
 	<li>the arguments object is not a real array, while rest parameters are Array instances, meaning methods like sort, map, forEach or pop can be applied on it directly;</li>
 	<li>the arguments object has additional functionality specific to itself (like the callee property).</li>
+	<li>true array unlike the argument psuedo array</li>
 </ul>
 <pre><code>
 function multiply(multiplier, ...theArgs) {

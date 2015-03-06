@@ -4,12 +4,22 @@
         "history/es5.0.html",
         "history/es5.0p2.html"
     ],
+    "es6Into/contrib.html",
     [
         "es6Intro/es6Features.html",
         "es6Intro/es6Featuresp2.html"
     ],
-
-    "features/arrows/arrows.html", [
+    [
+      "features/templatestrings/templatestrings.html",
+      "features/templatestrings/templatetags.html",
+      "features/templatestrings/dedent.html"
+    ],
+    [
+      "features/strings/stringmethods.html"
+    ],
+    "features/forof/forof.html",
+    "features/arrows/arrows.html",
+     [
         "features/classes/classes.html",
         "features/classes/inheritance.html",
         "features/classes/transpiled.html"
@@ -33,6 +43,9 @@
         "features/params/restp2.html",
         "features/params/spread.html"
     ],
-    "features/proxies/proxies.html",
+    [
+      "features/proxies/proxies.html",
+      "features/proxies/metaprogramming.html"
+    ],
     "features/symbols/symbols.html"
 ]

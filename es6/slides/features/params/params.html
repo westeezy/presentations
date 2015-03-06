@@ -1,8 +1,11 @@
 <h1>Default, Rest, Spread</h1>
 <small>finally</small>
 
+<h1>Default Params</h1>
+<span>can refer to previous params in the signature unlike python dicts which can create memory leaks</span>
+
 <pre><code>
-function f(x, y=12) {
+function f(x, y=12, z=y) {
   // y is 12 if not passed (or passed as undefined)
   return x + y;
 }
@@ -16,5 +19,5 @@ function f(x, y, z) {
   return x + y + z;
 }
 // Pass each elem of array as argument
-f(...[1,2,3]) == 6	
+f(...[1,2,3]) == 6
 </code></pre>
