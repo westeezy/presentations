@@ -4,7 +4,7 @@
         "history/es5.0.html",
         "history/es5.0p2.html"
     ],
-    "es6Into/contrib.html",
+    "es6Intro/contrib.html",
     [
         "es6Intro/es6Features.html",
         "es6Intro/es6Featuresp2.html"
@@ -35,6 +35,11 @@
         "features/letandconst/let.html",
         "features/letandconst/const.html"
     ],
+    [
+    "features/modules/modules.html",
+    "features/modules/currentmodulesolutions.html",
+    "features/modules/namedanddefaultexports.html"
+    ],
     "features/modules/modules.html",
     "features/literals/objLiterals.html",
     [
@@ -45,6 +50,7 @@
     ],
     [
       "features/proxies/proxies.html",
+      "features/proxies/basicproxy.html",
       "features/proxies/metaprogramming.html"
     ],
     "features/symbols/symbols.html"

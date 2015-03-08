@@ -11,7 +11,7 @@
 	<li>upgrade to es5 bind for callbacks essentially</li>
 </ul>
 
-<pre><code style="word-wrap: break-word;">
+<pre><code>
 var evens = numbers.map(num => num % 2 === 0);
 
 //or as a statement body
@@ -21,8 +21,8 @@ var specialNums = numbers.map(num => {
 
 
 // Lexical this
-var bob = {
-  _name: "Bob",
+var person = {
+  _name: "Westin",
   _friends: [],
   printFriends() {
     this._friends.forEach(f =>

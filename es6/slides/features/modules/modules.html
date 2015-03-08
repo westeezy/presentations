@@ -1,1 +1,22 @@
-modules.html
+<h1>Modules</h1>
+<pre><code>
+Syntax //From MDN
+
+import name from "module-name";
+import { member } from "module-name";
+import {member as alias } from "module-name";
+import { member1 , member2 } from "module-name";
+import { member1 , member2 as alias2 , [...] } from "module-name";
+import name , { member [ , [...] ] } from "module-name";
+import "module-name" as name;
+
+//export syntax
+Example 1:
+export name1, name2, ..., nameN;
+
+Example 2:
+export *; 
+
+Example 3: 
+export default function() {...}
+</code></pre>

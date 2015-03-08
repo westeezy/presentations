@@ -1,0 +1,16 @@
+<h1>Can have both named and default exports</h1>
+<span>Default is really just another named export</span>
+<pre><code>
+//------ underscore.js ------
+export default function (obj) {
+    ...
+};
+export function each(obj, iterator, context) {
+    ...
+}
+export { each as forEach };
+
+//------ main.js ------
+import _, { each } from 'underscore';
+...	
+</code></pre>

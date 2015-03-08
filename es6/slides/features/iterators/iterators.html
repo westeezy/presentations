@@ -1,1 +1,13 @@
-iterators.html
+<h1>Iterators</h1>
+<span>somewhere in the prototype chain must implement @@iterator</span>
+<pre><code>
+//creating an iterable
+
+var myIterable = {}
+myIterable[Symbol.iterator] = function* () {
+    yield 1;
+    yield 2;
+    yield 3;
+};
+[...myIterable] // [1, 2, 3]
+</code></pre>

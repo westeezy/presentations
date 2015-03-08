@@ -1,0 +1,19 @@
+<h1>For of</h1>
+<small>what we wanted for in to be</small>
+<ul>
+	<li>Loops over the data unlike for in which loops properties</li>
+	<li>Only works on iterable objects</li>
+</ul>
+<span>Example straight from the MDN</span>
+<pre><code>
+let arr = [3, 5, 7];
+arr.foo = "hello";
+
+for (let i in arr) {
+   console.log(i); // logs "0", "1", "2", "foo"
+}
+
+for (let i of arr) {
+   console.log(i); // logs "3", "5", "7"
+}
+</code></pre>
