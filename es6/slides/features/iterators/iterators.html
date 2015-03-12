@@ -1,8 +1,9 @@
 <h1>Iterators</h1>
-<span>somewhere in the prototype chain must implement @@iterator</span>
+<ul>
+	<li>somewhere in the prototype chain must implement @@iterator</li>
+</ul>
 <pre><code>
-//creating an iterable
-
+//creating an iterable (from MDN)
 var myIterable = {}
 myIterable[Symbol.iterator] = function* () {
     yield 1;

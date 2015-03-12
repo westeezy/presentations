@@ -1,9 +1,11 @@
-<h1>Not to be confused with constant variables</h1>
-<div>We use Object.freeze for those ;)</div>
+<h1>Const</h1>
+<ul>
+	<li>The const declaration creates a read-only named constant</li>
+</ul>
 
 <pre><code>
-var CONST = {
-    API_KEY: '123456789abcdefg'
-};
-Object.freeze(CONST);
+const COLOR = "BLUE";
+COLOR = "RED"; //fails silently
+console.log(COLOR);
+var COLOR = "ORANGE"; //error
 </code></pre>

@@ -14,6 +14,8 @@
 <pre><code>
 var evens = numbers.map(num => num % 2 === 0);
 
+nums.map((x) => x * 2);
+
 //or as a statement body
 var specialNums = numbers.map(num => {
 	return doSomething(num);
@@ -23,7 +25,7 @@ var specialNums = numbers.map(num => {
 // Lexical this
 var person = {
   _name: "Westin",
-  _friends: [],
+  _friends: ["Not Justin", "Doug", "Brendan", "Igor"],
   printFriends() {
     this._friends.forEach(f =>
       console.log(`${this._name} knows ${f}`));

@@ -1,2 +1,25 @@
-generators.html
-A generator object is both, iterator and iterable
+<h1>Generators</h1>
+<ul>
+	<li>Pause execution and let a value be returned and avoid callback hell</li>
+</ul>
+
+<pre><code>
+// Generator function, implementing an iterator over objects
+function* objectEntries(obj) {
+    // In ES6, you can use strings or symbols as property keys,
+    // Reflect.ownKeys() retrieves both
+    for (let key of Reflect.ownKeys(obj)) {
+        yield [key, obj[key]]; // pause and return a value
+    }
+}
+
+let obj = { first: 'Jane', last: 'Doe' };
+
+for (let [key,value] of objectEntries(obj)) {
+    console.log(`${key}. ${value}`);
+}
+/* Output:
+   first. Jane
+   last. Doe
+*/
+</code></pre>

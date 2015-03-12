@@ -28,8 +28,14 @@
         "features/destructuring/array.html",
         "features/destructuring/object.html"
     ],
+    [
     "features/iterators/iterators.html",
-    "features/generators/generators.html",
+    "features/iterators/iteratorp2.html"
+    ],
+    [
+        "features/generators/generators.html",
+        "features/generators/generatorexample.html"
+    ],
     "features/comprehensions/comprehensions.html",
     [
         "features/letandconst/let.html",
@@ -40,12 +46,13 @@
     "features/modules/currentmodulesolutions.html",
     "features/modules/namedanddefaultexports.html"
     ],
-    "features/modules/modules.html",
-    "features/literals/objLiterals.html",
+    [
+        "features/literals/objLiterals.html",
+        "features/literals/dynamic.html"
+    ],
     [
         "features/params/params.html",
         "features/params/rest.html",
-        "features/params/restp2.html",
         "features/params/spread.html"
     ],
     [
@@ -53,5 +60,6 @@
       "features/proxies/basicproxy.html",
       "features/proxies/metaprogramming.html"
     ],
-    "features/symbols/symbols.html"
+    "features/symbols/symbols.html",
+    "howto.html"
 ]

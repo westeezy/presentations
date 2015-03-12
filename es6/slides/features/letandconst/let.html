@@ -1,10 +1,28 @@
-<h1>Let & Const</h1>
+<h1>Let</h1>
 <div>Scope Binding constructs</div>
 <ul>
-    <li>Const is the single assignment of let</li>
     <li>In the early harmony days we (the community) tried to use try/catch to do this. Which was very imperformant</li>
-    <li>will not hoist <small>hoisting was an accident in scoping for js</small></li>
+    <li>will not hoist</li>
 </ul>
+
 <pre><code>
-//TODO
+function() {
+	if(x) {
+		var foo = 3;
+	}
+	var baz = 1;
+
+	//foo and baz in same scope due to hoisting
+}
+</code></pre>
+
+<pre><code>
+function() {
+	if(x) {
+		let foo = 3;
+	}
+	var baz = 1;
+
+	//foo and baz in same scope due to hoisting
+}
 </code></pre>

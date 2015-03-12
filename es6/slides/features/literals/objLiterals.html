@@ -1,19 +1,19 @@
 <h1>Enhanced Object Literals</h1>
-<span>Convenient Shorthand</span>
 <pre><code>
-
-//before
 var name = "Westin";
 var person = {
 	name: name,
 	age: 25
 };
+</code></pre>
 
-//now
+<pre><code>
 var name = "Westin";
 var person = {
 	name, 
-	age: 25
-}
-	
+	age: 25,
+	about() {
+		console.log(this.name + this.age);
+	}
+};
 </code></pre>
