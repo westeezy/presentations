@@ -1,0 +1,28 @@
+<h1>Proxies</h1>
+<ul>
+  <li>Proxies enable creation of objects with the full range of behaviors available to host objects. Can be used for interception, object virtualization, logging/profiling, etc</li>
+  <li>Proxies are called with two parameters `handler` and `target`</li>
+</ul>
+
+<pre><code>
+var p = new Proxy(target, handler);
+
+//Here are the traps
+var handler =
+{
+  get:...,
+  set:...,
+  has:...,
+  deleteProperty:...,
+  apply:...,
+  construct:...,
+  getOwnPropertyDescriptor:...,
+  defineProperty:...,
+  getPrototypeOf:...,
+  setPrototypeOf:...,
+  enumerate:...,
+  ownKeys:...,
+  preventExtensions:...,
+  isExtensible:...
+}
+</code></pre>

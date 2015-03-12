@@ -1,0 +1,13 @@
+<pre><code style="word-wrap: break-word;">
+class EnhancedTodoModel extends TodoModel {
+    constructor(storage) {
+        this.storage = storage;
+    }
+
+    save(item) {
+        alert('Saving a new task');
+        super.save(item);
+    }
+}
+
+</code></pre>

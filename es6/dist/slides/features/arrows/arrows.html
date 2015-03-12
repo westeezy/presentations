@@ -1,0 +1,35 @@
+<h1>Arrows =></h1>
+
+<span>Similar to arrows in C# and share scope</span>
+<small><strike>self = this;</strike></small>
+<ul>
+	<li>Inspired by CoffeeScript</li>
+	<li>Bind to outer this</li>
+	<li>Not newable</li>
+	<li>No arguments psuedo array</li>
+	<li>Always Anon</li>
+	<li>upgrade to es5 bind for callbacks essentially</li>
+</ul>
+
+<pre><code>
+var evens = numbers.map(num => num % 2 === 0);
+
+nums.map((x) => x * 2);
+
+//or as a statement body
+var specialNums = numbers.map(num => {
+	return doSomething(num);
+});
+
+
+// Lexical this
+var person = {
+  _name: "Westin",
+  _friends: ["Not Justin", "Doug", "Brendan", "Igor"],
+  printFriends() {
+    this._friends.forEach(f =>
+      console.log(`${this._name} knows ${f}`));
+  }
+}
+
+</code></pre>

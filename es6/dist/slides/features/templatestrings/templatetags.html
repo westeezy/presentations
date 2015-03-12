@@ -1,0 +1,15 @@
+<h1>Tagged Template Strings</h1>
+<span>Modify template strings with a function</span>
+
+<pre><code>
+
+function tag(array_of_strings, ...substitions) { //get to rest param laster
+	console.log(array_of_strings[0]); //Hello
+	console.log(substitions[0]); //Westin
+	console.log(array_of_strings[1]); //from js
+}
+
+var name = 'Westin';
+tag`Hello ${name} from js`;
+
+</code></pre>

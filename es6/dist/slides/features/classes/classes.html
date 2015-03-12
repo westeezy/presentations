@@ -1,0 +1,27 @@
+<h1>Classes</h1>
+<ul>
+    <li>just some syntactic sugar for prototype</li>
+    <li>we will have supers and constructors</li>
+</ul>
+
+<pre><code style="word-wrap: break-word;">
+class TodoModel {
+    constructor(storage) {
+        this.storage = storage;
+    }
+
+    create(title) {
+        title = title || '';
+
+        var newItem = {
+            title: title.trim(),
+            completed: false
+        };
+
+        return this.storage.save(newItem);
+    }
+}
+
+export default TodoModel;
+
+</code></pre>

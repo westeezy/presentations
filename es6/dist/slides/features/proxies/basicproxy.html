@@ -1,0 +1,21 @@
+<h1>Basic Example for Validation</h1>
+<pre><code>
+let validator = {
+  set: function(obj, prop, value) {
+    if (prop === 'smokes' && value && obj.age && obj.age < 18) {
+        throw new RangeError('This Person is not Old Enough!');
+    }
+
+    //person is over 18
+    obj[prop] = value;
+  }
+};
+
+let person = new Proxy({}, validator);
+
+person.age = 15;
+person.smokes = true; // Throws an exception
+person.age = 30;
+person.smokes = true; //no exception
+
+</code></pre>

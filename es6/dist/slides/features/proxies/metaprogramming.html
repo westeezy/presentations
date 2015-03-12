@@ -1,0 +1,27 @@
+<h1>MetaProgramming Fun</h1>
+
+<pre><code>
+const Sink = Proxy({},{
+  has: function(target, name) { return true; }, //bug in spidermonkey
+  get: function(target, name, reciever) {
+    if(name in Object.prototype) {
+      return Object.prototype.name;
+    }
+    return function(...args) {
+      return reciever.__methodMissing__(name, args);
+    }
+
+  }
+});
+
+Object.defineProperty(Object.prototype,
+  '__methodMissing__', {
+      configurable: true,
+      writable: true,
+      value: function(name, args) {
+        throw new TypeError(name + " is not a function");
+      }
+  }
+);
+
+</code></pre>

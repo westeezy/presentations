@@ -1,0 +1,15 @@
+<h1>List Comprehension</h1>
+<ul>
+	<li>Array.prototype.map</li>
+	<li>Array.prototype.filter</li>
+</ul>
+
+<pre><code>
+//both equal
+[for (i of [1, 2, 3]) i * i]; // [1, 4, 9]
+[1, 2, 3].map(function (i) { return i * i }); // [1, 4, 9]
+
+//a filter example
+[for (i of [1,4,2,3,-8]) if (i < 3) i];
+[1,4,2,3,-8].filter(function(i) { return i < 3 }); // [1, 2, -8]
+</code></pre>

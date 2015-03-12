@@ -1,0 +1,9 @@
+<h1>Dynamically Define Properties on Objects</h1>
+
+<pre><code>
+var westin = {
+	['hello_' + (() => 'world')()]: 42
+};
+
+console.log(westin.hello_world); //42
+</code></pre>

@@ -1,0 +1,12 @@
+<pre><code>
+Person.findOne({id: 1}, (person) => {
+	Friends.findOne(..., (friend) => {
+		//etc etc etc
+	});
+});
+
+var person = yield Person.findOne(...);
+var friends = yield Friends.findOne(...);
+
+//async but reads sync
+</code></pre>

@@ -1,0 +1,19 @@
+<h1>Symbols</h1>
+<ul>
+	<li>New Primitive type</li>
+	<li>Unique but not private (Object.getOwnPropertySymbols)</li>
+</ul>
+
+<pre><code>
+var sym = Symbol("key");
+var sym2 = Symbol("key");
+sym === sym2; //false
+
+//better example
+
+const COLOR_RED = Symbol();
+const AGE = Symbol();
+
+if(person[favoriteColor] === COLOR_RED)
+if(person[AGE] === 21)
+</code></pre>
